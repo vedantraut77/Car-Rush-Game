@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The cars</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="audio">
+        <audio id="myAudio" controls>
+            <source src="audios/audio.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="myAudio1" controls>
+            <source src="audios/game_over.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <div id="title">
+        <h2>CAR CRASH GAME</h2>
+    </div>
+
+    <div id="screen">
+        <button id="esc" onclick="history.back()">ESC</button>
+        <div id="game">
+            <div id="red_car"><img src="images/red.png" alt="red_"></div>
+            <div id="green_car"><img src="images/green.png" alt="green_"></div>
+        </div>
+        <div id="result">
+            <h1>Game Over</h1>
+            <p id="score"></p>
+            <button id="butt" onclick="location.reload()">Restart</button>
+        </div>
+        <script src="Js/script.js"></script>
+
+
+</body>
+
+</html>
